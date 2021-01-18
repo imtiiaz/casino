@@ -1,0 +1,903 @@
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: #f8f5f8;
+    color: #333;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Light", Sans-serif;
+    line-height: 1.2;
+    color: #aaa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    text-transform: capitalize;
+    color: #000000;
+}
+
+h1 {
+    font-size: ;
+    font-weight: ;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: ;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: ;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: ;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: ;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: ;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.overflow {
+    overflow-x: hidden;
+}
+
+.white_bg {
+    background: #fff;
+}
+
+/*Futura PT*/
+
+@font-face {
+    font-family: Light;
+    src: url(../font-family/FuturaPTLight.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Book;
+    src: url(../font-family/FuturaPTBook.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Demi;
+    src: url(../font-family/FuturaPTDemi.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../font-family/FuturaPTBold.otf);
+    font-weight: 700;
+}
+
+
+/* 2.-------------------------------------------
+                    Header Part
+-----------------------------------------------*/
+.main_menu {
+    background: #311342;
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all linear .5s;
+    z-index: 9999;
+}
+
+.menu_fix .navbar-toggler i {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.menu_fix .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    padding-top: 0;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-toggler i {
+    color: #ffff;
+    border: 1px solid #8dc63f;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 35px 20px;
+    margin: 0 2px;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #8dc63f;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .navbar-brand img {
+        width: 130px;
+        padding: 10px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 25px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 0 0 20px;
+        text-align: center;
+    }
+}
+
+
+
+/* 3.-------------------------------------------
+                    Banner Part
+-----------------------------------------------*/
+
+.large_banner {
+    background: url(../images/banner/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 45px;
+}
+
+.large_banner h1 {
+    font-size: 50px;
+    font-family: 'Bold', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
+    padding-bottom: 260px;
+}
+
+.small_banner {
+    background: url(../images/banner/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
+}
+
+.small_banner h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Demi', sans-serif;
+    letter-spacing: .1px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
+    padding-bottom: 120px;
+}
+
+.yellow_button .btn {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-family: 'Demi', sans-serif;
+    background: #fcf64d;
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #fcf64d), color-stop(50%, #fded3c), color-stop(100%, #ffe11c));
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcf64d), color-stop(50%, #fded3c), to(#ffe11c));
+    background: linear-gradient(to bottom, #fcf64d 0, #fded3c 50%, #ffe11c 100%);
+    -webkit-box-shadow: 0 2px 5px 0 transparent;
+    box-shadow: 0 2px 5px 0 transparent;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.yellow_button .btn:hover {
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #fffb7b), color-stop(50%, #ffef5d), color-stop(100%, #ffe53a));
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffb7b), color-stop(50%, #ffef5d), to(#ffe53a));
+    background: linear-gradient(to bottom, #fffb7b 0, #ffef5d 50%, #ffe53a 100%);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .7);
+}
+
+.pink_button {
+    font-size: 12px;
+    background: #ff50bb;
+    color: #fff;
+    font-family: 'Demi', sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 3px 10px;
+    float: right;
+}
+
+.pink_button:hover {
+    color: #fff;
+    background: #ff50bb;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .7);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .7);
+}
+
+.most_popular {
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.most_popular h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.most_popular ul li {
+    border-bottom: 1px solid #fbfbfb;
+    padding: 20px 2px 15px;
+}
+
+.most_popular ul li a:nth-child(2) {
+    color: #333;
+    font-size: 12px;
+    font-family: 'Demi', sans-serif;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.most_popular ul li a:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:767px) {
+    .large_banner h1 {
+        font-size: 42px;
+        padding-bottom: 70px;
+    }
+
+    .small_banner h3 {
+        font-size: 18px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .large_banner {
+        padding: 15px 10px;
+    }
+
+    .large_banner h1 {
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+/* 4.-------------------------------------------
+                    Gold Casino Part
+-----------------------------------------------*/
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Book", Sans-serif;
+}
+
+.casino_des .btn {
+    font-size: 14px;
+    color: #2113ff;
+    padding: 0;
+}
+
+.casino_des .btn:hover {
+    text-decoration: underline;
+}
+
+.button .white_buton {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+    font-family: "Demi", Sans-serif;
+    -webkit-transition: .2s;
+    transition: .2s;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #f0f0f0;
+}
+
+.button .white_buton:hover {
+    background: #fff;
+}
+
+tbody,
+td,
+tfoot,
+th,
+tr {
+    vertical-align: middle;
+    border: 0;
+}
+
+thead tr {
+    background: #fbfbfb;
+    color: #aaa;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+tbody td {
+    font-size: 20px;
+    color: #000;
+    font-family: "Demi", Sans-serif;
+}
+
+.number {
+    font-size: 50px;
+    line-height: 1;
+    color: #eee;
+}
+
+.logo {
+    text-align: center
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.offer span {
+    display: block;
+    font-size: 16px;
+    color: #aaa;
+    font-family: "Light", Sans-serif;
+}
+
+.secure {}
+
+.secure span {
+    font-size: 12px;
+    color: #2113ff;
+    font-family: "Light", Sans-serif;
+}
+
+.secure .pink_button {
+    padding: 10px 30px;
+    letter-spacing: .2px;
+    font-family: "Light", Sans-serif;
+}
+
+.main {
+    position: relative;
+}
+
+#rating::before {
+    content: '';
+    position: absolute;
+    top: -13px;
+    left: -11px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border-right: 4px solid #ff50bb;
+    border-bottom: 4px solid #ff50bb;
+    border-left: 4px solid #ff50bb;
+}
+
+.bar_news {
+    padding: 30px 15px 0;
+    background: #2b365c;
+}
+
+.bar_news_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar_news_head h3 {
+    font-size: 20px;
+    color: #fff;
+    font-family: "Demi", Sans-serif;
+}
+
+.bar_news_head .bar_button {
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #2b365c;
+    top: -11px;
+    left: 1px;
+    position: relative;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #5c4969;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.bar_news_head .bar_button:hover {
+    background: #401f54;
+}
+
+.news_block {
+    border-bottom: 1px solid #4c587f;
+    padding-top: 20px;
+}
+
+.bordernone {
+    border: none;
+}
+
+.news_block span {
+    font-size: 13px;
+    color: #909cc8;
+    display: block;
+    margin-bottom: 4px;
+    font-family: "Demi", Sans-serif;
+    text-transform: uppercase;
+}
+
+.news_block a {
+    color: #fff;
+    display: block;
+    font-family: "Demi", Sans-serif;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.news_block a:hover {
+    text-decoration: underline;
+}
+
+.news_block p {
+    color: #909cc8;
+    display: block;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+@media only screen (min-width:992px) and (max-width:1050px) {
+    .bar_news_head .bar_button {
+        padding: 5px;
+        top: -2px;
+    }
+
+    .bar_news_head h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    thead {
+        display: none;
+    }
+
+    .casino_des .white_buton {
+        margin-top: 20px;
+    }
+
+    .button .white_buton {
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    tbody tr th {
+        max-width: 20%;
+    }
+
+    tbody tr td {
+        max-width: 20%;
+    }
+
+    .number {
+        font-size: 20px;
+    }
+
+    .logo img {
+        max-width: 40px;
+    }
+
+    .casino {
+        display: none;
+    }
+
+    tbody td {
+        font-size: 14px;
+    }
+
+    #rating::before {
+        height: 40px;
+        width: 40px;
+    }
+
+    h5#rating {
+        font-size: 14px;
+    }
+
+    #rating::before {
+        top: -12px;
+    }
+
+    .offer span {
+        font-size: 12px;
+    }
+
+    .secure .pink_button {
+        padding: 5px 20px;
+    }
+
+}
+
+/* 5.-------------------------------------------
+                    Friends Casino Part
+-----------------------------------------------*/
+#friends_casino .white_bg {
+    padding: 30px 40px;
+}
+
+@media only screen and (max-width:767px) {
+    #friends_casino .white_bg {
+        padding: 30px 15px;
+    }
+}
+
+/* 6.-------------------------------------------
+                    FAQ Part
+-----------------------------------------------*/
+
+#faq_section .white_bg {
+    padding: 40px 30px;
+}
+
+.box {
+    padding-top: 30px;
+}
+
+.box h3 a {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Demi', sans-serif
+}
+
+.box h3 a:hover {
+    text-decoration: underline;
+}
+
+.more_button {
+    padding: 0;
+    color: #2113ff;
+    line-height: 0;
+}
+
+.more_button:hover {
+    text-decoration: underline;
+}
+
+#faq_section .button {
+    text-align: right;
+}
+
+@media only screen and (max-width:767px) {
+    #faq_section .white_bg {
+        padding: 30px 15px;
+    }
+}
+
+/* 7.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+#about_section .white_bg {
+    padding: 30px 40px;
+}
+
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Demi', sans-serif;
+}
+
+.box h3 p {
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Light', sans-serif;
+}
+
+
+.box ul li {
+    margin-top: 20px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Light', sans-serif;
+}
+
+.box_3 ul li {
+    color: #000;
+    font-family: 'Book', sans-serif;
+
+}
+
+.box ul li:after {
+    content: '';
+    background: url(../images/star/star.png) center center;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+@media only screen and (max-width:767px) {
+    #about_section .white_bg {
+        padding: 30px 15px;
+    }
+}
+
+/* 8.-------------------------------------------
+                    Footer Part
+-----------------------------------------------*/
+
+.footer_top {
+    background: #49275f;
+}
+
+.footer_item {
+    padding-top: 40px;
+}
+
+.footer_item h3 {
+    color: #fff;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    font-size: 20px;
+    font-family: 'Demi', sans-serif;
+}
+
+.footer_item ul {
+    width: 48%;
+    display: inline-block;
+}
+
+.footer_item ul li {
+    margin-top: 8px;
+    position: relative;
+}
+
+.footer_item ul li:after {
+    content: '';
+    background: url(../images//star/star.png) center center;
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.footer_item ul li a {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Book', sans-serif;
+}
+
+.footer_item ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_item p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer_partner a {
+    margin-top: 20px;
+}
+
+.social_link p {
+    font-size: 18px;
+    font-family: 'Demi', sans-serif;
+}
+
+.social_link a i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: #715981;
+    margin: 10px 5px 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+.social_link a i:hover {
+    background: #fff;
+    color: #ff50bb;
+}
+
+.footer_bottom {
+    background: #3d1f50;
+}
+
+.footer_menu ul {
+    text-align: center;
+}
+
+.footer_menu ul li {
+    display: inline-block;
+}
+
+.footer_menu ul li a {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Light', sans-serif;
+    margin: 10px 15px 0;
+    text-transform: uppercase;
+}
+
+.footer_menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_menu p {
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Light', sans-serif;
+    padding-top: 20px;
+}
+
+/* 9.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 10.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 11.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 12.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 13.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 14.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 15.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 16.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 17.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 18.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 19.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
+
+/* 20.-------------------------------------------
+                    About Part
+-----------------------------------------------*/
