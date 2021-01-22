@@ -19,6 +19,7 @@ a {
     text-decoration: none;
     display: inline-block;
     outline: 0;
+    color: #2113ff;
 }
 
 a:hover {
@@ -47,6 +48,32 @@ a {
     padding: 0;
 }
 
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Bold', sans-serif;
+    text-transform: inherit;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "Book", Sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Demi', sans-serif;
+}
+
+@media only screen and (max-width:767px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+
 p {
     font-size: 16px;
     font-family: "Light", Sans-serif;
@@ -59,41 +86,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-
-    text-transform: capitalize;
-    color: #000000;
-}
-
-h1 {
-    font-size: ;
-    font-weight: ;
-}
-
-h2 {
-    font-size: 36px;
-    font-weight: ;
-}
-
-h3 {
-    font-size: 28px;
-    font-weight: ;
-}
-
-h4 {
-    font-size: 22px;
-    font-weight: ;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: ;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: ;
-}
+h6 {}
 
 a:focus,
 .button:focus {
@@ -146,86 +139,379 @@ a:focus,
 /* 2.-------------------------------------------
                     Header Part
 -----------------------------------------------*/
-.main_menu {
+
+.menu_img {
+    position: relative;
+    width: 50px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.menu_img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header-search input {
+    background: #604c6c;
+    height: 35px;
+    width: 210px;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    color: #fff;
+    outline: 0;
+    margin-left: 50px;
+    text-transform: capitalize;
+}
+
+/*header-area-style-start*/
+
+.header-fx {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    padding-left: 150px;
+}
+
+
+.header-menu ul li {
+    display: inline-block;
+    padding: 45px 25px 43px 65px;
+    position: static;
+}
+
+@media (min-width:992px) and (max-width: 1100px) {
+    .header-menu {
+        padding-left: 40px;
+    }
+
+    .header-menu ul li {
+        display: inline-block;
+        padding: 30px 25px 30px 55px;
+        position: static;
+    }
+}
+
+
+
+.header-menu ul li:hover {
+    background: #4a3258;
+}
+
+.header-menu ul li a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Book', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+}
+
+/*menupic start*/
+
+.header-menu > ul > li.menu_pic > a:before {
+    content: '';
+    position: absolute;
+    background: url(../images/menu/menupic.png) no-repeat;
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+    left: -60px;
+    top: -20px;
+}
+
+.header-menu ul li.casinos a:before {
+    background-position: -62px -16px;
+}
+
+.header-menu ul li.casinos:hover a:before {
+    background-position: -62px -73px;
+}
+
+.header-menu ul li.bonuses a:before {
+    background-position: -118px -16px;
+}
+
+.header-menu ul li.bonuses:hover a:before {
+    background-position: -118px -73px;
+}
+
+.header-menu ul li.news a:before {
+    background-position: -169px -16px;
+}
+
+.header-menu ul li.news:hover a:before {
+    background-position: -169px -75px;
+}
+
+.header-menu ul li.faq a:before {
+    background-position: -225px -16px;
+}
+
+.header-menu ul li.faq:hover a:before {
+    background-position: -225px -75px;
+}
+
+.show_all a {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto 20px;
+    border: 1px solid #5c4969;
+    top: 20px;
+    text-decoration: none;
+    background: #4a3258;
+    color: #fff;
+}
+
+.offcanva-menu .show_all a {
+    top: 0 !important;
+}
+
+.show_all a:hover {
     background: #311342;
 }
 
-.menu_fix {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: all linear .5s;
-    z-index: 9999;
-}
+/*menupic end*/
 
-.menu_fix .navbar-toggler i {
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.menu_fix .navbar-nav .nav-item .nav-link {
-    color: #fff;
-}
-
-.navbar-brand {
-    padding-top: 0;
-}
-
-.navbar-brand img {
-    width: 150px;
-}
-
-.navbar-toggler i {
-    color: #ffff;
-    border: 1px solid #8dc63f;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #fff;
+.style-btn {
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 16px;
+    color: #fff;
+    background: #047CFF;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .3s;
+    border: 2px solid transparent;
+}
+
+.style-btn:hover {
+    background: transparent;
+    border: 2px solid #047CFF;
+    color: #047CFF
+}
+
+/*header-area-style-end*/
+
+/*copyright-aera-style-end*/
+
+.offcanva {
+    display: none;
+}
+
+.header_bar {
+    display: none;
+}
+
+.list ul li a:hover {
+    text-decoration: underline;
+}
+
+/*megamenu-style*/
+
+.header-menu ul li .megamenu {
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    left: 0;
+    background: #4a3258;
+    padding: 30px 20px;
+    z-index: 99999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.header-menu ul li:hover .megamenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+
+.p-static {
+    position: static;
+}
+
+.p-static {
+    position: static;
+}
+
+.header-aera {
+    background: #311342;
+    position: relative;
+}
+
+.menu-single-widget {
+    background: transparent;
+    width: 100%;
+    transition: .3s;
+    border-radius: 6px;
+}
+
+.menu-single-fx a {
+    padding: 0 !important;
+}
+
+.menu-single-fx h5 {
+    font-size: 20px !important;
+    color: #000;
     font-weight: 500;
-    padding: 35px 20px;
-    margin: 0 2px;
-    text-transform: uppercase;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -os-transition: all linear .3s;
-    -ms-transition: all linear .3s;
+    margin: 0;
 }
 
-.navbar-nav .nav-item .nav-link:hover,
-.navbar-nav .nav-item .nav-link.active {
-    color: #8dc63f;
+.menu-single-fx {
+    display: flex;
+    align-items: center;
 }
 
-@media only screen and (max-width: 991px) {
-
-    .navbar-brand img {
-        width: 130px;
-        padding: 10px 0;
-    }
-
-    .navbar-nav {
-        padding-top: 25px;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        padding: 0 0 20px;
-        text-align: center;
-    }
+.menu-single-widget p {
+    font-size: 14px;
+    margin: 0;
 }
 
+
+.header-aera.scroll-header {
+    position: fixed;
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 9999;
+    -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    width: 100%;
+}
+
+.header-aera.scroll-header .header-menu ul li a {
+    padding: 24px 0;
+}
+
+.header-aera.scroll-header .header-menu ul li:hover .megamenu {
+    top: 100%;
+}
+
+.mega-box {
+    width: 30%;
+}
+
+.menu-single-widget:hover a {
+    color: #fff !important;
+}
+
+.megamenu-fx {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-single-widget:hover p {
+    color: #fff !important;
+}
+
+.menu-single-fx h5 a {
+    color: #675671 !important;
+    margin-bottom: 24px !important;
+    font-size: 20px !important;
+    text-transform: capitalize !important;
+}
+
+.menu-single-fx:hover h5 a {
+    color: #675671 !important;
+}
+
+.menu-single-widget p a {
+    padding: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    text-transform: capitalize !important;
+}
+
+.menu-single-widget p a:hover {
+    text-decoration: underline;
+}
+
+.header-logo a img {
+    max-width: 140px;
+}
+
+/*offcanva menupic*/
+
+.offcanva-menu ul li.menu_pic > a {
+    position: relative;
+}
+
+.offcanva-menu ul li.menu_pic > a:before {
+    content: '';
+    position: absolute;
+    background: url(../images/menu/menupic.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    left: -15px;
+    top: -8px;
+}
+
+.offcanva-menu ul li.casinos > a:before {
+    background-position: -62px -16px;
+}
+
+.offcanva-menu ul li.casinos:hover a:before {
+    background-position: -62px -73px;
+}
+
+
+.offcanva-menu ul li.bonuses a:before {
+    background-position: -118px -16px;
+}
+
+.offcanva-menu ul li.bonuses:hover a:before {
+    background-position: -118px -73px;
+}
+
+.offcanva-menu ul li.news a:before {
+    background-position: -169px -16px;
+}
+
+.offcanva-menu ul li.news:hover a:before {
+    background-position: -169px -75px;
+}
+
+.offcanva-menu ul li.faq a:before {
+    background-position: -225px -16px;
+}
+
+.offcanva-menu ul li.faq:hover a:before {
+    background-position: -225px -75px;
+}
+
+/*offcanva menupic*/
 
 
 /* 3.-------------------------------------------
                     Banner Part
 -----------------------------------------------*/
+
+#banner_section {
+    overflow-x: hidden;
+}
 
 .large_banner {
     background: url(../images/banner/banner-1.jpg);
@@ -243,6 +529,7 @@ a:focus,
     text-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
     padding-bottom: 260px;
 }
+
 
 .small_banner {
     background: url(../images/banner/banner-2.jpg);
@@ -334,6 +621,21 @@ a:focus,
     text-decoration: underline;
 }
 
+.banner_slider h1 {
+    font-size: 50px;
+    font-family: 'Bold', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, .3);
+    padding-bottom: 260px;
+}
+
+@media only screen and (max-width:991px) {
+    .large_banner.mt-30 {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .large_banner h1 {
         font-size: 42px;
@@ -362,12 +664,6 @@ a:focus,
 /* 4.-------------------------------------------
                     Gold Casino Part
 -----------------------------------------------*/
-
-h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: "Book", Sans-serif;
-}
 
 .casino_des .btn {
     font-size: 14px;
@@ -438,8 +734,6 @@ tbody td {
     color: #aaa;
     font-family: "Light", Sans-serif;
 }
-
-.secure {}
 
 .secure span {
     font-size: 12px;
@@ -547,6 +841,58 @@ tbody td {
     padding-bottom: 20px;
 }
 
+.news_detail .img img {
+    padding: 0 50px
+}
+
+.news_detail .review_block .pink_button {
+    float: none;
+    padding: 10px 30px;
+    font-family: 'Light', sans-serif;
+    color: #fff;
+    margin-top: 0;
+}
+
+.news_detail .most_popular {
+    background: none;
+}
+
+.medium_progress_bar .circle_card .circle .box {
+    background: #fff;
+}
+
+.medium_progress_bar .circle_card .circle .box span {
+    color: #000;
+}
+
+.medium_progress_bar .progress_bar .circle_card .circle {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.medium_progress_bar .circle .box span {
+    font-size: 20px;
+}
+
+.medium_progress_bar .circle_card {
+    text-align: left;
+}
+
+.slick-slide {
+    padding: 0 15px;
+}
+
+.slick-slide.slick-active {
+    outline: 0;
+}
+
+@media only screen and (min-width: 320px) {
+    .medium_progress_bar .circle canvas {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
 @media only screen (min-width:992px) and (max-width:1050px) {
     .bar_news_head .bar_button {
         padding: 5px;
@@ -569,6 +915,18 @@ tbody td {
 
     .button .white_buton {
         padding: 10px 5px;
+    }
+
+    table.table .secure span {
+        display: none;
+    }
+
+    .secure span {
+        display: none;
+    }
+
+    .news_detail .img img {
+        padding: 0;
     }
 }
 
@@ -649,11 +1007,15 @@ tbody td {
     padding-top: 30px;
 }
 
+.box p {
+    padding-top: 20px;
+}
+
 .box h3 a {
     font-size: 20px;
     margin-bottom: 15px;
     color: #333;
-    font-family: 'Demi', sans-serif
+    font-family: 'Demi', sans-serif;
 }
 
 .box h3 a:hover {
@@ -728,6 +1090,7 @@ tbody td {
     left: 0;
     top: 2px;
 }
+
 @media only screen and (max-width:767px) {
     #about_section .white_bg {
         padding: 30px 15px;
@@ -855,32 +1218,822 @@ tbody td {
 }
 
 /* 9.-------------------------------------------
-                    About Part
+                    Casino Detail Part
 -----------------------------------------------*/
+
+.checkbox h3 {
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+.checkbox ul li {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Light', sans-serif;
+}
+
+.checkbox ul li input {
+    border: 1px solid #f0f0f0;
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.checkbox ul li a {
+    text-transform: uppercase;
+    color: #263052;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 23px;
+    font-family: 'Book', sans-serif;
+    position: relative;
+}
+
+.checkbox ul li a:after {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '+';
+    font-size: 25px;
+    font-family: 'Light', sans-serif;
+}
+
+.checkbox ul li a:focus:after {
+    top: -12px;
+    content: '-';
+}
+
+.checkbox_head p {
+    font-size: 40px;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-family: 'Book', sans-serif;
+}
+
+.casino_head h1 {
+    color: #000;
+}
+
+.casino_head p {
+    color: #333;
+}
+
+.detail_banner {
+    background: url(../images/casinodetail/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.casino_section .breadcrumbs_list {
+    background: #eee;
+}
+
+.breadcrumbs_list {
+    background: rgba(0, 0, 0, .35);
+    width: 100%;
+}
+
+.breadcrumbs_list ul li {
+    display: inline-block;
+}
+
+.breadcrumbs_list ul li a {
+    font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    padding: 5px 0;
+    position: relative;
+    margin-right: 30px;
+}
+
+.breadcrumbs_list ul li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs_list ul li a.active {
+    color: aliceblue;
+}
+
+.breadcrumbs_list ul li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    right: -17px;
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #aaa;
+}
+
+.breadcrumbs_list ul li:last-child a:after {
+    content: none;
+}
+
+
+.detail_banner_content {
+    padding: 80px 0 60px;
+}
+
+.detail_banner_content .yellow_button .btn {
+    padding: 19px 128px;
+}
+
+.detail_banner_content p {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.detail_banner_content .progress_bar {
+    margin: 40px 0;
+}
+
+.circle_card {
+    text-align: -webkit-center;
+}
+
+.progress_bar .circle_card .circle {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.small_progress_bar .progress_bar .circle_card .circle {
+    height: 30px;
+    width: 30px;
+}
+
+.circle canvas {
+    width: 120px;
+    height: 120px;
+}
+
+.circle_card .circle .box,
+.circle_card .circle .box span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.circle_card .circle .box {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .35);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    transition: all 0.2s;
+}
+
+.small_progress_bar .circle_card .circle .box {
+    background: #fff;
+}
+
+.circle_card .circle .box span {
+    color: #fff;
+}
+
+.progress_bar .circle_card .text {
+    background: #ff50bb;
+}
+
+.circle .box span {
+    font-size: 38px;
+    font-family: 'Book', sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+}
+
+.small_progress_bar .circle .box span {
+    font-size: 14px;
+    font-family: 'Book', sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+    color: #000;
+}
+
+.circle_card .text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:991px) {
+    .checkbox_head p {
+        font-size: 30px;
+        color: #aaa;
+        margin-bottom: 10px;
+        font-family: 'Book', sans-serif;
+    }
+}
+
+
+@media only screen and (min-width:320px) {
+    .circle canvas {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    .small_progress_bar .circle canvas {
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
 
 /* 10.-------------------------------------------
-                    About Part
+                    Bonus Part
 -----------------------------------------------*/
+
+
+
+.white_bg {
+    padding: 40px 40px 0;
+}
+
+.bonus_item {
+    margin-top: 30px;
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.casino_item {
+    position: relative;
+}
+
+.small_progress_bar {
+    position: absolute;
+    top: -25px;
+    right: 6px;
+}
+
+.text {
+    padding: 0 20px;
+    text-align: left;
+    position: relative;
+}
+
+.bonus_item h3 {
+    padding: 20px 0;
+}
+
+.casino_item h3 {
+    position: relative;
+    text-align: left;
+    padding-left: 95px;
+    padding-bottom: 0;
+}
+
+.casino_item h3 img {
+    position: absolute;
+    top: 25px;
+    left: 65px;
+}
+
+.casino_item h3 span {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Light', sans-serif;
+}
+
+.casino_item .text h3 {
+    padding: 20px 0 10px;
+}
+
+.casino_item .text h3 a {
+    color: #000;
+}
+
+.casino_item .text h3 a:hover {
+    text-decoration: underline;
+}
+
+.bonus_item p {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.casino_item p {
+    font-size: 14px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.bonus_text p {
+    color: #aaa;
+    font-family: 'Demi', sans-serif;
+}
+
+.bonus_text a {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Demi', sans-serif;
+    padding-top: 7px;
+    line-height: 1.2;
+}
+
+.bonus_text a:hover {
+    text-decoration: underline;
+}
+
+.bonus_item p a {
+    font-size: 13px;
+    color: #aaa;
+    font-family: 'Demi', sans-serif;
+    margin-bottom: 10px;
+}
+
+.bonus_item .pink_button {
+    float: none;
+    padding: 10px 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.casino_item .pink_button {
+    margin-bottom: 10px;
+}
+
+.advantage h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #6da807;
+}
+
+.disadvantage h2 {
+    color: #e42e51;
+}
+
+.advantage ul li {
+    position: relative;
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-family: 'Light', sans-serif;
+}
+
+.advantage ul li:after {
+    content: '+';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #6da807;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.disadvantage ul li:after {
+    content: '-';
+    color: #e42e51;
+
+}
+
+.details_item {
+    padding-top: 30px;
+}
+
+.details_item h3 {}
+
+.details_item span {
+    font-size: 16px;
+    color: #aaa;
+    font-family: 'Book', sans-serif;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.details_item ul li {
+    padding-top: 20px;
+    font-size: 16px;
+    font-family: 'Light', sans-serif;
+    font-weight: 500;
+}
+
+.details_item ul li a:hover {
+    text-decoration: underline;
+}
+
+.details_item p {
+    color: #333;
+    font-family: 'Light', sans-serif;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.casino_details {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+@media only screen and (max-width:767px) {
+    .white_bg {
+        padding: 30px 15px;
+    }
+}
 
 /* 11.-------------------------------------------
-                    About Part
+                    Review Part
 -----------------------------------------------*/
+
+.review_head h2 {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+.review_head h2 img {
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    height: 40px;
+}
+
+.review_block {
+    padding-bottom: 30px;
+}
+
+.review_block p {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Light', sans-serif;
+    font-weight: 400;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.review_block h3 {
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.review_block ul li {
+    font-size: 20px;
+    color: #333;
+    font-family: 'Light', sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.review_block ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ff0f9b;
+    top: 10px;
+    left: 50px;
+}
+
+.review_block ul li span {
+    font-family: 'Demi', sans-serif;
+}
+
+.review_block .pink_button {
+    float: none;
+    padding: 15px 30px;
+    font-family: 'Light', sans-serif;
+    color: #fff;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width:767px) {
+    .review_head h2 {
+        padding-right: 0;
+        padding-left: 60px;
+    }
+
+    .review_block p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .review_head h2 img {
+        top: 7px;
+        left: -6px;
+        height: 31px;
+    }
+
+    .review_block h3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .review_block p {
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
 
 /* 12.-------------------------------------------
-                    About Part
+                    Bonus Details Part
 -----------------------------------------------*/
+
+.bonus_banner {
+    background: url(../images/bonusdetail/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bonus_details {
+    padding-top: 0;
+}
+
+.bonus_details_item {
+    padding-top: 0;
+}
+
+
 
 /* 13.-------------------------------------------
-                    About Part
+                    FAQ Part
 -----------------------------------------------*/
+
+.accordion {
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.accordion-item .accordion-button {
+    border: none;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+.accordion-item .accordion-button span {
+    margin-right: 30px;
+    color: #ccc;
+    left: 18px;
+}
+
+.accordion-item .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+}
+
+.accordion-body p {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+.accordion-body a {
+    display: block;
+    font-size: 16px;
+    color: #2113ff;
+}
+
+.accordion-body h3 {
+    font-size: 18px;
+    position: relative;
+    margin: 30px 30px 10px;
+}
+
+.accordion-body h3 .button {
+    position: absolute;
+    right: 0;
+    top: -8px;
+}
+
+.accordion-body h3 a {
+    display: inline-block;
+    float: right;
+    border: 1px solid #f0f0f0;
+    background: 0 0;
+    font-size: 12px;
+    color: #333;
+    font-weight: 700;
+    padding: 12px 40px;
+    margin: 0 5px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width:550px) {
+
+    .accordion-item .accordion-button {
+        padding: 15px 10px;
+        font-weight: 600;
+        font-size: 18px;
+
+    }
+
+    .accordion-item .accordion-button span {
+        margin-right: 10px;
+    }
+
+    .accordion-body {
+        padding-bottom: 50px;
+    }
+
+    .accordion-body p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+
+    .accordion-body h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .accordion-body h3 .button {
+        position: absolute;
+        right: 50%;
+        transform: translate(50%);
+        top: 30px;
+        display: flex;
+    }
+}
+
+
 
 /* 14.-------------------------------------------
-                    About Part
+                    News Part
 -----------------------------------------------*/
+.news_section .white_bg {
+    padding: 10px 30px 30px;
+}
 
+.news_section .breadcrumbs_list {
+    background: #eee;
+}
+
+.news_section .white_bg .casino_item p {
+    padding-bottom: 15px;
+}
+
+.news_search .form-control {
+    width: 300px;
+    color: #aaa;
+    text-transform: capitalize;
+    border: 0;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    padding: 9px 37px 10px 40px;
+}
+
+.news_search .form-outline {
+    position: relative;
+}
+
+.news_search .form-outline:after {
+    content: '\f002';
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #eee;
+}
+
+.news_search .form-control:focus {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+}
+
+@media only screen and (max-width:767px) {
+    .news_search {
+        text-align: center;
+    }
+
+    .news_search .form-outline {
+        display: inline;
+    }
+
+    .news_search .form-control {
+        display: inline-block;
+    }
+}
+
+/*input[type="search" i]*/
 /* 15.-------------------------------------------
                     About Part
 -----------------------------------------------*/
+
+.about_section h1 {
+    color: #000;
+    padding-bottom: 20px;
+}
+
+.about_section .review_block h3,
+p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about_section .review_block p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.about_section .review_block ul li {
+    padding-left: 20px;
+
+}
+
+.about_section .review_block ul li strong {
+    font-family: 'Demi', sans-serif;
+}
+
+.review_block ul li:after {
+    left: 0;
+}
+
+.tab_menu .nav {
+    padding: 20px 60px 0 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 10px 27px 0 rgba(153, 153, 153, .2);
+    box-shadow: 0 10px 27px 0 rgba(153, 153, 153, .2);
+}
+
+.tab_menu .nav-pills .nav-link {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 0;
+    background: #fff;
+    color: #333;
+    padding-bottom: 30px;
+    font-family: 'Demi', sans-serif;
+}
+
+.tab_menu .nav-pills .nav-link:hover {
+    color: #2113ff;
+}
+
+.contact_form label {
+    font-size: 20px;
+    font-family: 'Light', sans-serif;
+    margin-bottom: 5px;
+}
+
+.contact_form .form-control {
+    margin-bottom: 15px;
+}
+
+.contact_form .form-control:focus {
+    box-shadow: none;
+    outline: 0;
+    border-color: inherit;
+}
+
+.contact_form .form-control:hover {
+
+    border-color: inherit;
+}
+
+.contact_form textarea.form-control {
+    height: 100px;
+}
+
+.contact_form img {
+    display: block;
+}
+
+.contact_form .pink_button {
+    width: 200px;
+}
 
 /* 16.-------------------------------------------
                     About Part

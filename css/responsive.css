@@ -1,19 +1,762 @@
-/* Normal desktop :1200px */
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1449px) {
 
-@media (min-width: 1200px) and (max-width: 1500px) {}
+    .hero-img {
+        width: 369px;
+        position: relative;
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
 
-/* Normal desktop :992px */
+    .animated.img.single-img-2 {
+        right: -83px;
+        top: 22px;
+        max-width: 188px;
+    }
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+    .animated.img.single-img-1 {
+        left: -92px;
+        top: 100px;
+        box-shadow: 0 0 3px 0 rgb(0, 0, 0, .3);
+        max-width: 143px;
+    }
 
-/* Tablet desktop :768px */
+    .animated.img.single-img-3 {
+        bottom: -2px;
+        left: 117px;
+        max-width: 190px;
+    }
 
-@media (min-width: 768px) and (max-width: 991px) {}
+    .hero-area {
+        padding-top: 0;
+    }
 
-/* Large Mobile :480px */
+    .hero-content h3 {
+        line-height: 60px;
+    }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
+}
 
-/* small mobile :320px */
+/* LG Device :992px. */
 
-@media (max-width: 767px) {}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .hero-content h3 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero-content p {
+        font-size: 19px;
+        line-height: 34px;
+        margin-bottom: 24px;
+    }
+
+    .hero-area {
+        padding-top: 20px;
+    }
+
+    .single-brand {
+        justify-content: end;
+    }
+
+    .brand-fx {
+        width: auto;
+        padding-top: 40px;
+    }
+
+    .header-sp img {
+        max-width: 358px;
+    }
+
+    .brand-aera {
+        padding-bottom: 50px;
+    }
+
+    .anda-aera {
+        padding: 50px 0px;
+        background: #F4F8FF;
+    }
+
+    .section-title h3 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .section-title {
+        margin-bottom: 51px;
+    }
+
+    .anda-hd-ti h4 {
+        font-size: 16px;
+    }
+
+    .anda-tx p {
+        margin: 0;
+        font-size: 13px;
+        line-height: 26px;
+    }
+
+    .yang-aera {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .yang-hdn h3 {
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 17px;
+    }
+
+    .yang-hdn p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .yang-hdn {
+        padding-bottom: 37px;
+        margin-bottom: 31px;
+        border-bottom: 1px solid #E4E5E6;
+    }
+
+    .footer-aera {
+        padding-top: 250px;
+        margin-top: -180px;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .copyright-area {
+        padding-bottom: 36px;
+        padding-top: 20px;
+    }
+
+    .contact-aera {
+        padding-right: 30px;
+    }
+
+    .contact-wrap {
+        width: 80%;
+        flex: 0 0 80%;
+    }
+
+    .contact-fx {
+        margin-left: 0;
+    }
+
+    .footer-content p br {
+        display: none;
+    }
+
+    .footer-content {
+        padding-right: 15px;
+    }
+
+    .hero-img {
+        width: 340px;
+        position: relative;
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .animated.img.single-img-2 {
+        right: -41px;
+        top: 44px;
+        max-width: 140px;
+    }
+
+    .animated.img.single-img-1 {
+        left: -55px;
+        top: 126px;
+        box-shadow: 0 0 3px 0 rgb(0, 0, 0, .3);
+        max-width: 106px;
+    }
+
+    .animated.img.single-img-3 {
+        bottom: -16px;
+        left: 138px;
+        max-width: 171px;
+    }
+
+    .yang-img {
+        width: 410px;
+        float: right;
+        position: relative;
+    }
+
+    .menu-single-widget {
+        padding: 13px;
+    }
+
+    .menu-single-fx a {
+        padding: 0 !important;
+        font-size: 18px !important;
+        padding-right: 8px !important;
+    }
+
+    .menu-single-fx h5 {
+        font-size: 19px !important;
+        font-weight: 500;
+    }
+
+    .menu-single-widget p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* MD Device :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .header-logo a img {
+        max-width: 140px;
+    }
+
+    .header-menu ul li a {
+        font-size: 16px;
+        padding: 40px 0;
+    }
+
+    .header-menu {
+        padding-left: 30px;
+    }
+
+    .style-btn {
+        width: 139px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .hero-content h3 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 19px;
+    }
+
+    .hero-area {
+        padding-top: 15px;
+    }
+
+    .single-brand a img {
+        max-width: 100px;
+    }
+
+    .brand-fx {
+        width: auto;
+        margin: auto;
+        padding-top: 40px;
+        justify-content: center;
+    }
+
+    .single-brand {
+        width: 140px;
+        height: 86px;
+    }
+
+    .brand-aera {
+        padding-bottom: 40px;
+    }
+
+    .header-sp img {
+        max-width: 226px;
+    }
+
+    .anda-aera {
+        padding: 40px 0;
+    }
+
+    .section-title h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .anga-icon {
+        padding-right: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .anda-wrap {
+        min-height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .yang-aera {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .yang-hdn h3 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+
+    .yang-hdn p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .yang-hdn {
+        padding-bottom: 20px;
+        margin-bottom: 23px;
+    }
+
+    .qut img {
+        max-width: 25px;
+    }
+
+    .yang-btm-ct {
+        padding-left: 44px;
+    }
+
+    .yang-btm-ct p {
+        font-size: 15px;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    .contact-aera {
+        padding-right: 20px;
+    }
+
+    .contact-bg {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact-fx {
+        display: block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .contact-wrap {
+        width: 100%;
+        flex: 0 0 1000%;
+    }
+
+    .single-input-box {
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 10px;
+    }
+
+    .single-input-box input {
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .contact-btn input {
+        width: 100%;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .footer-aera {
+        padding-top: 180px;
+        padding-bottom: 0;
+        margin-top: -130px;
+    }
+
+    .footer-logo a img {
+        max-width: 150px;
+    }
+
+    .footer-content p br {
+        display: none;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .footer-ri {
+        width: 300px;
+    }
+
+    .footer-wrap {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .footer-ri {
+        width: auto;
+        text-align: center;
+        margin-bottom: 29px;
+    }
+
+    .mid-fx {
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .copyright-area {
+        background: #F4F8FF;
+        padding-bottom: 17px;
+        padding-top: 20px;
+    }
+
+    .hero-img {
+        width: 250px;
+        position: relative;
+        float: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .animated.img.single-img-2 {
+        right: -47px;
+        top: 19px;
+        max-width: 120px;
+    }
+
+    .animated.img.single-img-1 {
+        left: -55px;
+        top: 63px;
+        box-shadow: 0 0 3px 0 rgb(0, 0, 0, .3);
+        max-width: 93px;
+    }
+
+    .animated.img.single-img-3 {
+        bottom: -13px;
+        left: 90px;
+        max-width: 130px;
+    }
+
+    .yang-img {
+        width: 280px;
+        float: right;
+        position: relative;
+    }
+
+    .amimate-img.img-1 {
+        left: -27px;
+        top: -14px;
+        max-width: 120px;
+    }
+
+    .amimate-img.img-2 {
+        max-width: 70px;
+        top: 52px;
+        left: -83px;
+    }
+
+    .amimate-img.img-3 {
+        max-width: 70px;
+        top: 70px;
+        left: 13px;
+    }
+
+    .animated-img.img-4 {
+        max-width: 150px;
+    }
+
+    .animated-img.img-5 {
+        max-width: 150px;
+        top: 100px;
+    }
+
+    .animated-img.img-6 {
+        left: -13px;
+        top: 33px;
+        max-width: 170px;
+    }
+
+    .animated-img.img-7 {
+        top: 90px;
+        max-width: 140px;
+        left: 16px;
+    }
+
+    .animated-img.img-8 {
+        max-width: 140px;
+        top: 140px;
+        left: 16px;
+    }
+
+    .menu-single-widget {
+        padding: 13px;
+    }
+
+    .menu-single-fx a {
+        padding: 0 !important;
+        font-size: 18px !important;
+        padding-right: 8px !important;
+    }
+
+    .menu-single-fx h5 {
+        font-size: 19px !important;
+        font-weight: 500;
+    }
+
+    .menu-single-widget p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+
+    .header-logo a img {
+        max-width: 125px;
+    }
+
+    .header-menu ul li a {
+        font-size: 16px;
+        padding: 40px 0;
+    }
+
+    .header-menu {
+        padding-left: 30px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-button {
+        float: right;
+        display: none;
+    }
+
+    .header-aera {
+        position: relative;
+        padding: 15px 0;
+    }
+
+
+    /*    offcanva*/
+
+    .offcanva {
+        width: 100%;
+        background: #4a3258;
+        position: fixed;
+        z-index: 999999;
+        transition: .3s;
+        left: -100%;
+    }
+
+    .offcanva-menu {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+
+
+
+    .offcanva-menu ul li a {
+        color: #fff !important;
+        padding: 10px 0 0 !important;
+        display: block !important;
+        text-transform: uppercase;
+        font-family: 'Demi', sans-serif;
+    }
+
+    .offcanva-menu ul li > a {
+        color: #fff !important;
+        padding: 10px 0 0 50px !important;
+        display: block !important;
+        text-transform: uppercase;
+        font-family: 'Demi', sans-serif;
+    }
+
+    .offcanva-menu .show_all {
+        text-align: center;
+    }
+
+    .offcanva-menu .show_all a {
+        display: inline-block !important;
+        padding: 10px 30px !important;
+        width: auto;
+    }
+
+    .cross {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cross a {
+        color: #ffff;
+        font-size: 25px;
+    }
+
+    .header_bar {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        right: 2px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .offcanva.active {
+        left: 0;
+    }
+
+    .header_bar a {
+        background: #fff;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        color: #311342;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .off-canvas-overlay {
+        background: #000;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        visibility: hidden;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .off-canvas-overlay.active {
+        opacity: .5;
+        visibility: visible;
+    }
+
+    .offcanva {
+        display: block;
+    }
+
+    .header_bar {
+        display: block
+    }
+
+    /*my css*/
+
+    .offcanva-menu ul li {
+        padding-bottom: 10px;
+    }
+
+    .offcanva-menu > ul li {
+        padding-bottom: 30px;
+    }
+
+
+    .offcanva-menu .menu-single-fx a {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .offcanva-menu .menu-single-fx h5 a {
+        color: #675671 !important;
+        font-size: 20px !important;
+        font-family: 'Book', sans-serif !important;
+        margin-top: 10px !important;
+
+    }
+
+    .offcanva-menu .menu-single-widget p a {
+        font-family: 'Light', sans-serif !important;
+    }
+
+    .menu-single-fx.tty a {
+        border-bottom: 0;
+        font-size: 15px !important;
+    }
+
+    .menu-single-widget.ttvp {
+        margin-bottom: 10px;
+        background: transparent;
+        transition: .3s;
+    }
+
+    .menu-single-widget.ttvp:hover {
+        background: #000;
+        border-radius: 0;
+    }
+
+    .menu-single-fx.tty h5 {
+        font-size: 15px !important;
+    }
+
+    .menu-single-widget.ttvp p {
+        font-size: 14px !important;
+    }
+
+    .megamenu {
+        height: 190px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 20px;
+    }
+
+    .hearo-wrap {
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        padding-right: 0;
+    }
+
+    .single-input-box.tthj input {
+        border-right: 0;
+    }
+
+    .copyright-text a {
+        padding-left: 0;
+    }
+
+
+}
+
+
+/* SM Small Device :550px. */
+@media only screen and (max-width: 576px) {
+    .header-logo a img {
+        max-width: 80px;
+    }
+
+    .header-search input {
+        margin-left: 20px;
+        width: 140px;
+    }
+
+
+
+}
