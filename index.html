@@ -10,55 +10,171 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <title>Casino</title>
+    <title>Casino Wizard</title>
 
     <!-- all css here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Progress Bar JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 
 </head>
 
 <body>
 
-    <header>
-        <div class="main_menu">
-            <nav class="navbar navbar-expand-lg py-0">
-                <div class="container p-0">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo/logo.png" alt="not found">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav m-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about_section">who we are</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services_section">what we do</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blog_section">blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="faq.html">faq</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">contact</a>
-                            </li>
-                        </ul>
+    <!--------------------------Header Section Start------------------------------->
+
+
+    <div class="offcanva">
+        <div class="cross">
+            <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="offcanva-menu">
+            <ul>
+                <li class="casinos menu_pic">
+                    <a href="#">casinos</a>
+                </li>
+                <li class="bonuses menu_pic" type="button" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><a href="#">Bonuses</a>
+                    <div class="megamenu collapse" id="collapseExample">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="menu-single-widget">
+                                    <div class="menu-single-fx">
+                                        <h5><a href="#">Online Casinos</a></h5>
+                                    </div>
+                                    <p><a href="#">Best Online Casinos</a></p>
+                                    <p><a href="#">No Deposit Casinos</a></p>
+                                    <p><a href="#">Real Money Casinos</a></p>
+                                    <p><a href="#">Mobile Casinos</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="menu-single-widget">
+                                    <div class="menu-single-fx">
+                                        <h5><a href="#">Online Casinos</a></h5>
+                                    </div>
+                                    <p><a href="#">Best Online Casinos</a></p>
+                                    <p><a href="#">No Deposit Casinos</a></p>
+                                    <p><a href="#">Real Money Casinos</a></p>
+                                    <p><a href="#">Mobile Casinos</a></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="menu-single-widget">
+                                    <div class="menu-single-fx">
+                                        <h5><a href="#">Online Casinos</a></h5>
+                                    </div>
+                                    <p><a href="#">Best Online Casinos</a></p>
+                                    <p><a href="#">No Deposit Casinos</a></p>
+                                    <p><a href="#">Real Money Casinos</a></p>
+                                    <p><a href="#">Mobile Casinos</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show_all">
+                            <a href="#">show all bonuses</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="news menu_pic"><a href="#">News</a></li>
+                <li class="faq menu_pic"><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="off-canvas-overlay"></div>
+
+    <header class="pps"> </header>
+
+    <!--header-area-start-->
+
+    <div class="header-aera">
+        <div class="header_bar">
+            <a href="#"><i class="fas fa-align-right"></i></a>
+        </div>
+        <div class="container-lg">
+            <div class="row align-items-center p-static">
+                <div class="col-lg-12 p-static">
+                    <div class="header-fx">
+                        <div class="header-logo">
+                            <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                        </div>
+                        <div class="header-search">
+                            <input type="search" placeholder="search">
+                        </div>
+                        <div class="header-menu">
+                            <ul>
+                                <li class="menu_pic casinos">
+                                    <a href="#">casinos</a>
+                                </li>
+                                <li class="menu_pic bonuses"><a href="#">bonuses</a>
+                                    <div class="megamenu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="megamenu-fx">
+                                                        <div class="mega-box">
+                                                            <div class="menu-single-widget">
+                                                                <div class="menu-single-fx">
+                                                                    <h5><a href="#">Online Casinos</a></h5>
+                                                                </div>
+                                                                <p><a href="#">Best Online Casinos</a></p>
+                                                                <p><a href="#">No Deposit Casinos</a></p>
+                                                                <p><a href="#">Real Money Casinos</a></p>
+                                                                <p><a href="#">Mobile Casinos</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-box">
+                                                            <div class="menu-single-widget">
+                                                                <div class="menu-single-fx">
+                                                                    <h5><a href="#">Online Casinos</a></h5>
+                                                                </div>
+                                                                <p><a href="#">Best Online Casinos</a></p>
+                                                                <p><a href="#">No Deposit Casinos</a></p>
+                                                                <p><a href="#">Real Money Casinos</a></p>
+                                                                <p><a href="#">Mobile Casinos</a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-box">
+                                                            <div class="menu-single-widget">
+                                                                <div class="menu-single-fx">
+                                                                    <h5><a href="#">Online Casinos</a></h5>
+                                                                </div>
+                                                                <p><a href="#">Best Online Casinos</a></p>
+                                                                <p><a href="#">No Deposit Casinos</a></p>
+                                                                <p><a href="#">Real Money Casinos</a></p>
+                                                                <p><a href="#">Mobile Casinos</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="show_all">
+                                                        <a href="#">show all bonuses</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu_pic news"><a href="#">news</a></li>
+                                <li class="menu_pic faq"><a href="#">faq</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
+    </div>
+
+    <!--header-area-end-->
+
+    <!--------------------------Header Section End------------------------------->
 
 
     <!-------------------------Banner Section Star------------------------>
@@ -66,7 +182,7 @@
     <section id="banner_section" class="">
         <div class="container-lg p-md-0">
             <div class="row">
-                <div class="col-xxl-9">
+                <div class="col-xxl-9 d-none d-lg-inline-block">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="large_banner mt-30">
@@ -93,6 +209,34 @@
                                             <a href="#" class="btn">Check Bonus</a>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-lg-none">
+                    <div class="row banner_slider">
+                        <div class="col-lg-12">
+                            <div class="large_banner mt-30">
+                                <h1>The Casino Wizard: Best Online Casinos 2021</h1>
+                                <div class="yellow_button pb-10">
+                                    <a href="#" class="btn">Check All Casinos</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="large_banner mt-30">
+                                <h1>€10 Free No Deposit at <br> Lapalingo Casino</h1>
+                                <div class="yellow_button">
+                                    <a href="#" class="btn">Check Bonus</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="large_banner mt-30">
+                                <h1>€10 Free No Deposit at <br> Lapalingo Casino</h1>
+                                <div class="yellow_button">
+                                    <a href="#" class="btn">Check Bonus</a>
                                 </div>
                             </div>
                         </div>
@@ -203,10 +347,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -224,10 +388,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -245,10 +429,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -266,10 +470,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -287,10 +511,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -308,10 +552,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -329,10 +593,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -350,10 +634,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -371,10 +675,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -392,10 +716,30 @@
                                         <td class="logo"><img src="images/casinologo/biglogo1.png" alt="notfound"></td>
                                         <td class="casino">mBitcasino</td>
                                         <td class="rating">
-                                            <div class="main">
-                                                <h5 id="rating">
-                                                    9.7
-                                                </h5>
+                                            <div class="medium_progress_bar">
+                                                <div class="progress_bar">
+                                                    <div class="circle_card">
+                                                        <div class="circle">
+                                                            <div class="bar"></div>
+                                                            <div class="box"><span></span></div>
+                                                        </div>
+                                                    </div>
+                                                    <script>
+                                                        let options = {
+                                                            startAngle: -1.55,
+                                                            size: 150,
+                                                            value: 0.85,
+                                                            fill: {
+                                                                gradient: ['#fa4299']
+                                                            }
+                                                        }
+                                                        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                                            function(event, progress, stepValue) {
+                                                                $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                                            });
+
+                                                    </script>
+                                                </div>
                                             </div>
                                         </td>
                                         <td class="offer">5 BTC
@@ -454,6 +798,7 @@
             </div>
         </div>
     </section>
+
     <!--------------------------Gold_casino Section End-------------------------->
 
     <!--------------------------Friends Casino Section Start----------------------------->
@@ -489,7 +834,7 @@
 
     <section id="faq_section" class="mt-30">
         <div class="container-lg white_bg">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-9">
                     <h2>FREQUENTLY ASKED QUESTIONS</h2>
                 </div>
@@ -728,7 +1073,7 @@
                         <div class="col-lg-6 col-md-10 text-center">
                             <p>TheCasinoWizard.com is not part of or related to any commercial online casino. Gambling involves risk.
                                 By gambling online you run the risk that you may lose money or suffer psychological injuries. You gamble at your own risk.</p>
-                                <p>Copyright © 2021 TheCasinoWizard.com. All rights reserved</p>
+                            <p>Copyright © 2021 TheCasinoWizard.com. All rights reserved</p>
                         </div>
                     </div>
                 </div>
@@ -738,21 +1083,20 @@
 
 
     <!--------------------------Footer Section End------------------------------->
-    <!--------------------------Banner Section Start----------------------------->
-    <!--------------------------Banner Section End------------------------------->
-    <!--------------------------Banner Section Start----------------------------->
-    <!--------------------------Banner Section End------------------------------->
-    <!--------------------------Banner Section Start----------------------------->
-    <!--------------------------Banner Section End------------------------------->
+
 
 
     <!-- JS here -->
+
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.meanmenu.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/ajax-form.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"> </script>
 
 </body>
 

@@ -1,0 +1,440 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <title>Casino Details</title>
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Progress Bar JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--------------------------Header Section Start----------------------------->
+
+    <header>
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg py-0">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="not found">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_section">who we are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services_section">what we do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog_section">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--------------------------Header Section End------------------------------->
+
+    <!--------------------------Banner Section Start----------------------------->
+
+    <section id="detail_banner" class="mb-40">
+        <div class="detail_banner">
+            <div class="breadcrumbs_list">
+                <div class="container-lg">
+                    <ul>
+                        <li><a href="index.html" class="active">home</a></li>
+                        <li><a href="casino.html" class="active">Casino</a></li>
+                        <li><a href="#">MBITCASINO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-lg text-center">
+                <div class="detail_banner_content">
+                    <h1>mBitcasino</h1>
+                    <div class="progress_bar">
+                        <div class="circle_card">
+                            <div class="circle">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                        </div>
+                        <script>
+                            let options = {
+                                startAngle: -1.55,
+                                size: 150,
+                                value: 0.85,
+                                fill: {
+                                    gradient: ['#fa4299']
+                                }
+                            }
+                            $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                function(event, progress, stepValue) {
+                                    $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                });
+
+                        </script>
+                    </div>
+                    <div class="yellow_button">
+                        <a href="#" class="btn">play</a>
+                    </div>
+                    <p>T&C apply</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------Banner Section End------------------------------->
+
+    <!--------------------------Bonus Section Start----------------------------->
+
+    <section id="bonus_section">
+        <div class="container-lg white_bg">
+            <div class="row align-items-center">
+                <div class="col-9">
+                    <h2>MBITCASINO BONUSES</h2>
+                </div>
+                <div class="col-3">
+                    <div class="button">
+                        <a href="#" class="white_buton btn">SHOW ALL BONUSES.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bonus_item">
+                                <img src="images/bonus/bonus.png" class="img-fluid w-100" alt="nt found">
+                                <h3>150% up to 2BTC + 100 FS</h3>
+                                <p>no code required</p>
+                                <a href="#" class="pink_button btn">get bonus</a>
+                                <p><a href="#">T&C apply</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bonus_item">
+                                <img src="images/bonus/bonus.png" class="img-fluid w-100" alt="nt found">
+                                <h3>150% up to 2BTC + 100 FS</h3>
+                                <p>no code required</p>
+                                <a href="#" class="pink_button btn">get bonus</a>
+                                <p><a href="#">T&C apply</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bonus_item">
+                                <img src="images/bonus/bonus.png" class="img-fluid w-100" alt="nt found">
+                                <h3>150% up to 2BTC + 100 FS</h3>
+                                <p>no code required</p>
+                                <a href="#" class="pink_button btn">get bonus</a>
+                                <p><a href="#">T&C apply</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="advantage">
+                        <h2>Advantages</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Accepts Bitcoin and other leading cryptocurrencies</li>
+                                    <li>Live casino platform available</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Tournaments available</li>
+                                    <li>Offers a sportsbook</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="advantage disadvantage">
+                        <h2>disadvantage</h2>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li>Does not support traditional currencies</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul>
+                                    <li>Features a long list of restricted countries</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="casino_details">
+                <h2>MBIT CASINO DETAILS</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item">
+                            <h3>Casino summary</h3>
+                            <ul>
+                                <li><span>Сasino type</span>
+                                    <a href="#">Bitcoin,</a>
+                                    <a href="#">Flash,</a>
+                                    <a href="#">Instant Play,</a>
+                                    <a href="#">Live Dealer,</a>
+                                    <a href="#">Mobile,</a>
+                                    <a href="#">No Deposit,</a>
+                                </li>
+                                <li><span>Manual Flushing</span>
+                                    <p>Yes</p>
+                                </li>
+                                <li><span>Сasino type</span>
+                                    <a href="#">Bitcoin,</a>
+                                    <a href="#">Flash,</a>
+                                    <a href="#">Instant Play,</a>
+                                    <a href="#">Live Dealer,</a>
+                                    <a href="#">Mobile,</a>
+                                    <a href="#">No Deposit,</a>
+                                </li>
+                                <li><span>Currencies</span>
+                                    <p>Bitcoin,</p>
+                                    <p>Litecoin,</p>
+                                    <p>Dogecoin,</p>
+                                    <p>Ethereum,</p>
+                                    <p>Bitcoin Cash</p>
+                                </li>
+                                <li><span>Accepts Bitcoin:</span>
+                                    <p>yes</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item">
+                            <h3>Deposit & Withdrawals</h3>
+                            <ul>
+                                <li>
+                                    <span>Maximum Withdrawal</span>
+                                    <p>Yes</p>
+                                </li>
+                                <li>
+                                    <span>Withdrawal limit</span>
+                                    <p>100 Btc per month</p>
+                                </li>
+                                <li>
+                                    <span>Withdrawal times E-wallets</span>
+                                </li>
+                                <li>
+                                    <span>Currencies</span>
+                                    <p>Bitcoin,</p>
+                                </li>
+                                <li>
+                                    <span>Accepts Bitcoin:</span>
+                                    <p>yes</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item">
+                            <h3>Contact information</h3>
+                            <ul>
+                                <li>
+                                    <span>Live Chat
+                                    </span>
+                                    <p>Yes</p>
+                                </li>
+                                <li>
+                                    <span>Support email</span>
+                                    <p>support@mbitcasino.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------Bonus Section End------------------------------->
+
+    <!--------------------------Review Section Start----------------------------->
+
+    <section id="review_section">
+        <div class="container-lg white_bg">
+            <div class="row justify-content-center">
+                <div class="col-md-11 col-lg-8">
+                    <div class="review_head">
+                        <h2>MBITCASINO REVIEW
+                            <img src="images/casinologo/biglogo1.png" alt="">
+                        </h2>
+                    </div>
+                    <div class="review_block">
+                        <p>Established in 2014, mBitcasino takes advantage of the growing need for Bitcoin-related casino gaming and entertainment. As a company owned and operated by Direx N.V., mBitcasino is more than ready to provide Bitcoin-related casino solutions to players from different parts of the world, also becoming one of the most important American bitcoin casinos. To ensure that players will get the best experience, it adheres to a philosophy of privacy, security, and integrity.</p>
+                        <img src="images/review/review1.jpg" class="img-fluid w-100" alt="notfound">
+                        <div class="button text-center">
+                            <a href="#" class="pink_button btn">Play at mBitcasino</a>
+                        </div>
+                        <p>Through the use of Bitcoins, players are given the chance to fund and play games in a private and secure manner. Also, mBitcasino takes it a step farther by complying with the latest industry requirements and regulations. The casino is fully licensed by the Government of Curacao, and the company itself is regulated by Antillephone N.V. This is one of the <a href="#">best online casinos in USA</a>.</p>
+                        <p>As a leading online casino, mBitcasino boasts more than 200 slots games. The most popular slots titles are powered by Netent, Play n’ Go, Betsoft, Booming Games, and Amatic to name just a few. Aside from the classic casino games, this gaming platform also boasts a number of games. For its special dealer games, the software solutions used are supplied by Evolution Gaming, Asia Gaming, Play n’ Go, Pragmatic Play, and Spinomenal.</p>
+                        <p>Since mBitcasino is cryptocurrency-focused, players may primarily use Bitcoin and other top cryptocurrencies to play the games. Aside from Bitcoin, this casino also accepts Ethereum (ETH), Bitcoin Cash (BCH), and Dogecoin (DOGE). It also accepts EUR, but the deposits and cashouts to and from the EUR account will be done using Bitcoin.</p>
+                        <h3>mBitcasino Changes – How the Site Has Evolved</h3>
+                        <p>One thing that has caught our attention at the mBitcasino is how the site has quickly become much more modern in recent times. The mBitcasino has undergone some fantastic changes that make the site a much more pleasant one to visit. The menus have been renewed to look better and the in-site animations are as good as they’ve ever been.</p>
+                        <p>That’s not all, but the site’s new introduction of promotions is also making us love mBit more than we have ever done before. New bonuses fill the casino with ways to try out the <a href="#"> best online slots</a> for free, as the casino is home to games that stand out as the best ever made. You can play all of these games with bitcoins, of course, as mBit is one of the <a href="#">best bitcoin casinos</a> on the planet.</p>
+                        <img src="images/review/review2.jpg" class="img-fluid w-100" alt="nt found">
+                        <h3>Our Experience at the mBitcasino</h3>
+                        <p>As a bitcoin casino, mBit is one of the best in the market. It’s not only one of the most played bitcoin casinos out there, but it’s also a legitimately good online casino that proved to us how good it was right from the first impression that it gave us. For starters, if you like to register quickly in an online casino, then you will not be disappointed by mBit at all. We’d go as far as saying that this online casino is the fastest in which you’ll be able to register, as you don’t even need to click a registration button but simply fill a couple of fields on the home screen and you’re done.</p>
+                        <p>We have tried some fantastic online casinos before that are a bit let down by their registration features, but since that’s not an issue at mBit, we already had a good image of the site and we expected it to keep the same level of user-friendliness towards the entire experience. Thankfully, it did just that.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------Review Section End------------------------------->
+
+    <!--------------------------Footer Section Start----------------------------->
+
+    <footer>
+        <div class="footer_top pb-30">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_item">
+                            <h3>
+                                Casino Wizard's Top 10
+                            </h3>
+                            <ul>
+                                <li><a href="#">MBitcasino</a></li>
+                                <li><a href="#">Lapalingo Casino</a></li>
+                                <li><a href="#">Dunder Casino</a></li>
+                                <li><a href="#">Betsson Casino</a></li>
+                                <li><a href="#">Videoslots Casino</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Casino Winner</a></li>
+                                <li><a href="#">Cookie Casino</a></li>
+                                <li><a href="#">BitStarz Casino</a></li>
+                                <li><a href="#">One Casino</a></li>
+                                <li><a href="#">MBitcasino</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_item">
+                            <h3>
+                                Popular Casino Bonuses
+                            </h3>
+                            <ul>
+                                <li><a href="#">MBitcasino</a></li>
+                                <li><a href="#">Lapalingo Casino</a></li>
+                                <li><a href="#">Dunder Casino</a></li>
+                                <li><a href="#">Betsson Casino</a></li>
+                                <li><a href="#">Videoslots Casino</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Casino Winner</a></li>
+                                <li><a href="#">Cookie Casino</a></li>
+                                <li><a href="#">BitStarz Casino</a></li>
+                                <li><a href="#">One Casino</a></li>
+                                <li><a href="#">MBitcasino</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer_item">
+                            <div class="footer_logo">
+                                <a href="#"><img src="images/logo/footerlogo.png" class="" alt="not-found"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer_item">
+                            <p>
+                                The independent reviewer and guide to online casinos, casino games and casino bonuses. Only for 18+.
+                            </p>
+                            <div class="footer_partner">
+                                <a href="#"><img src="images/logo/partner.gif" alt="not found"></a>
+                                <a href="#"><img src="images/logo/partner2.png" class="img-fluid" alt="not found"></a>
+                            </div>
+                            <div class="social_link pt-40">
+                                <p>Connect with us:</p>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom pb-20">
+            <div class="container-lg">
+                <div class="footer_menu pt-20">
+                    <ul>
+                        <li><a href="#">DISCLAIMER</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                        <li><a href="#">COOKIES</a></li>
+                        <li><a href="#">GAMBLING HELP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#"> ABOUT US</a></li>
+                    </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-10 text-center">
+                            <p>TheCasinoWizard.com is not part of or related to any commercial online casino. Gambling involves risk.
+                                By gambling online you run the risk that you may lose money or suffer psychological injuries. You gamble at your own risk.</p>
+                            <p>Copyright © 2021 TheCasinoWizard.com. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--------------------------Footer Section End------------------------------->
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/script.js"> </script>
+
+</body>
+
+</html>

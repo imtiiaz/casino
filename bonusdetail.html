@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <title>Bonus Details</title>
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Progress Bar JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--------------------------Header Section Start----------------------------->
+
+    <header>
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg py-0">
+                <div class="container-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/logo.png" alt="not found">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about_section">who we are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services_section">what we do</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog_section">blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">faq</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--------------------------Header Section End------------------------------->
+
+    <!--------------------------Banner Section Start----------------------------->
+
+    <section id="detail_banner" class="mb-40">
+        <div class="detail_banner bonus_banner">
+            <div class="breadcrumbs_list">
+                <div class="container-lg">
+                    <ul>
+                        <li><a href="#" class="active">home</a></li>
+                        <li><a href="#">BONUSES</a></li>
+                        <li><a href="#">MBITCASINO WELCOME BONUS: UP TO 5 BTC + 300 FREE SPINS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-lg text-center">
+                <div class="detail_banner_content">
+                    <h1>mBitcasino Welcome Bonus: Up to 5 <br> BTC + 300 Free Spins</h1>
+                    <div class="progress_bar">
+                        <div class="circle_card">
+                            <div class="circle">
+                                <div class="bar"></div>
+                                <div class="box"><span></span></div>
+                            </div>
+                        </div>
+                        <script>
+                            let options = {
+                                startAngle: -1.55,
+                                size: 150,
+                                value: 0.85,
+                                fill: {
+                                    gradient: ['#fa4299']
+                                }
+                            }
+                            $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+                                function(event, progress, stepValue) {
+                                    $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+                                });
+
+                        </script>
+                    </div>
+                    <div class="yellow_button">
+                        <a href="#" class="btn">get bonus!</a>
+                    </div>
+                    <p>T&C apply</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------Banner Section End------------------------------->
+
+    <!--------------------------Banner Section Start------------------------------->
+
+    <section id="bonus_section">
+        <div class="container-lg white_bg">
+            <div class="casino_details bonus_details">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item bonus_details_item">
+                            <ul>
+                                <li><span>Casino</span>
+                                    <a href="#">mBitcasino</a>
+                                </li>
+                                <li><span>Bonus type</span>
+                                    <a href="#">Match Deposit,</a>
+                                    <a href="#">Welcome</a>
+                                </li>
+                                <li><span>Minimum deposit</span>
+                                    <p>40 mBTC</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item bonus_details_item">
+                            <ul>
+                                <li>
+                                    <span>Wagering requirements</span>
+                                    <p>40xb</p>
+                                </li>
+                                <li>
+                                    <span>Maximum bonus amount</span>
+                                    <p>200%</p>
+                                </li>
+                                <li>
+                                    <span>Bonus value</span>
+                                    <p>5 BTC</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="details_item bonus_details_item">
+                            <ul>
+                                <li>
+                                    <span>Exclusive
+                                    </span>
+                                    <p>no</p>
+                                </li>
+                                <li>
+                                    <span>Cashable</span>
+                                    <p>no</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-11 col-lg-8">
+                    <div class="review_head">
+                        <h2>MBITCASINO WELCOME BONUS
+                        </h2>
+                    </div>
+                    <div class="review_block">
+                        <p>Cryptocurrency gamblers have probably heard about the <a href="#">mBit Casino </a>before, and if you haven’t you might want to check it out as soon as possible.</p>
+                        <img src="images/review/review1.jpg" class="img-fluid w-100" alt="notfound">
+                        <p>The mBitcasino welcome bonus welcomes every player with rewards that are overall very tough to find on the internet – you can get up to 5 BTC by simply making deposits on this awesome casino. If that wasn’t enough, the offer is non-sticky. Comply with the site’s wagering requirements and earn upwards of €10,000 in no time!</p>
+                        <p>Originally founded in 2014, the mBit casino allows players from every corner of the world to wager their Bitcoins and other forms of cryptocurrency in a friendly environment. However, the site also allows players to use regular cash to place wagers, and their welcome bonuses may be cashed out in traditional currency or cryptocurrency. The options are endless, and the choice is yours in this amazing <a href="#">bitcoin casino</a>.</p>
+                        <p>However, even though mBit is one of the best Bitcoin casinos on the planet, you still need to know a few things about the mBit welcome bonus before you decide how much cash you want to commit to it. You can get a lot of cash if you choose to deposit Bitcoins, but the promotion has some rules that can’t be overlooked by players.</p>
+                        <div class="button text-center">
+                            <a href="#" class="pink_button btn">Get mBitcasino Bonus</a>
+                        </div>
+                        <div class="review_head">
+                            <h2>HOW TO GET THE MBITCASINO WELCOME BONUS</h2>
+                        </div>
+                        <p>In order to receive the mBitcasino welcome bonus, all you must do is register a new account on the site. Then, make sure you deposit at least €280 (or 50 mBTC) to get the 250 free spins. The rest of the cash that you can get entirely depends on how much money you’re willing to spend on the site.</p>
+                        <p>This offer allows low rollers to make a large profit and enjoy the promotion, but high rollers can certainly expect to get a large sum of cash if they play their cards right.</p>
+                        <p>You can deposit any of the most popular types of cryptocurrencies when opting to receive the mBit welcome bonus. However, it’s important that you know just how much cash you need to deposit in order to enjoy the offer to the fullest. The following list aims to guide you through the first three deposits and explain to you how much money you can get with each.</p>
+                        <ul>
+                            <li><span>First Deposit Bonus</span>
+                                – The first deposit bonus gives you 110% of the amount you choose to deposit, up to 1 BTC. Making a deposit larger than 0.05 BTC or €280 also means that you can get 250 free spins to get you started on the site.
+                            </li>
+                            <li>
+                                <span>Second Deposit Bonus</span>
+                                – The second deposit bonus grants you a 50% match deposit bonus of up to 2.5 BTC or €9450
+                            </li>
+                            <li>
+                                <span>Third Deposit Bonus </span>
+                                – The second deposit bonus gives you a 75% match deposit bonus of up to 1.5 BTC or €5700
+                            </li>
+                        </ul>
+                        <div class="review_head pt-10">
+                            <h2>WHAT THE MBIT WELCOME BONUS IS ABOUT</h2>
+                        </div>
+                        <p>The mBit welcome bonus consists of 3 <a href="#">match deposit bonuses</a>, with all of them promising to give you a total of 5BTC if you deposit enough money in the site. The equivalent in euros is around €19,000, so you can consider this to be one of the most lucrative offers on the internet. It’s better to deposit Bitcoins on the casino above any other form of currency.</p>
+                        <p>You’ll be able to use the money in the site’s slots, which means you don’t have to worry about slot game restrictions. You can play whichever slot you want as long as it’s not part of the list of excluded games nor is it a progressive jackpot game</p>
+                        <p>This offer is not only about getting to know the mBitcasino slots – you’ll be able to make quite a large profit if you deposit enough cash to receive the full 5 BTC amount. It’s up to you to decide how much money you want to get!</p>
+                        <div class="button text-center">
+                            <a href="#" class="pink_button btn">Get mBitcasino Bonus</a>
+                        </div>
+                        <div class="review_head pt-10">
+                            <h2>MBITCASINO WELCOME BONUS TERMS AND CONDITIONS</h2>
+                        </div>
+                        <p>The mBitcasino welcome bonus terms and conditions are very straightforward and as specific as the most demanding of players would like to see them. Many welcome bonuses that span over two or more deposits have a single ruleset in place, but the mBit welcome bonus has specific terms and conditions listed under every match deposit bonus that the promotion includes.</p>
+                        <h3>Wagering Requirements</h3>
+                        <p>The mBitcasino welcome bonus <a href="#">wagering requirements</a> only include the amount of your bonus cash, which means you won’t have to wager your deposit in order to fulfill the requirements. You’ll have to wager the total sum of your bonus 50 times before the money becomes withdrawable.</p>
+                        <p>Keep in mind that your account funds will be locked whilst the mBit wagering requirements aren’t met and the bonus is still attached to your account. You may not withdraw any winnings, or any deposit money still credited to your account, whilst the bonus is still active. Furthermore, you may not activate more than one bonus offer at once.</p>
+                        <p>The maximum wager that you can place while wagering to fulfill the bonus requirements is €5. You may not place wagers with an amount higher than that one or the welcome bonus may be removed from your account, as higher bets are deemed as bonus abuse.</p>
+                        <h3>Game Restrictions</h3>
+                        <p>We often talk about which games can be played with a welcome bonus and divide them according to their stake weights. However, the mBitcasino welcome bonus doesn’t have any stake weights associated with the offer. You may only play slots when wagering towards the completion of the welcome bonus terms.</p>
+                        <p>As such, you must not play any other types of games while the mBit welcome bonus is active. Doing so will result in permanent removal of your bonus funds and any winnings that you’ve managed to make using the bonus by then.</p>
+                        <p>Slot games have a 100% contribution rate towards the completion of the bonus wagering requirements, but every other game has a 0% contribution rate. This also includes sportsbook bets – no bets are to be placed in sports using your account while the bonus offer is still active.</p>
+                        <h3>Bonus Timeframe</h3>
+                        <p>Even though the free spins must be used within 7 days, the bonus cash obtained by making the three deposits on the site as well as the revenue generated using the 250 free spins can be wagered in 30 days before the offer is removed from your account. That means you have one month to meet the mBitcasino welcome bonus wagering requirements – a very generous timeframe, if you ask us!</p>
+                        <div class="review_head">
+                            <h2>GET YOUR FREE BITCOINS TODAY</h2>
+                        </div>
+                        <p>The mBitcasino puts at your disposal a large supply of free BTC (or any other form of cryptocurrency of your choosing) by simply making a deposit on the site. The rewards offered to those brave enough to embark on the mBit adventure are just too much to be ignored, and the wagering requirements are as fair as you can imagine.</p>
+                        <p>If you’re a cryptocurrency gambling enthusiast, then the mBitcasino is probably the place where you want to be. This prestigious site has a reputation that has grown over the span of the last 5 years, and it’s now known to be one of the biggest and best Bitcoin casinos on the planet.</p>
+                        <p>Read our full <a href="#">mBit Casino review</a> here.</p>
+                        <div class="button text-center">
+                            <a href="#" class="pink_button btn">Get mBitcasino Bonus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------Banner Section End--------------------------------->
+    <!--------------------------Banner Section Start------------------------------->
+    <!--------------------------Banner Section End--------------------------------->
+
+    <!--------------------------Footer Section Start----------------------------->
+
+    <footer>
+        <div class="footer_top pb-30">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_item">
+                            <h3>
+                                Casino Wizard's Top 10
+                            </h3>
+                            <ul>
+                                <li><a href="#">MBitcasino</a></li>
+                                <li><a href="#">Lapalingo Casino</a></li>
+                                <li><a href="#">Dunder Casino</a></li>
+                                <li><a href="#">Betsson Casino</a></li>
+                                <li><a href="#">Videoslots Casino</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Casino Winner</a></li>
+                                <li><a href="#">Cookie Casino</a></li>
+                                <li><a href="#">BitStarz Casino</a></li>
+                                <li><a href="#">One Casino</a></li>
+                                <li><a href="#">MBitcasino</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="footer_item">
+                            <h3>
+                                Popular Casino Bonuses
+                            </h3>
+                            <ul>
+                                <li><a href="#">MBitcasino</a></li>
+                                <li><a href="#">Lapalingo Casino</a></li>
+                                <li><a href="#">Dunder Casino</a></li>
+                                <li><a href="#">Betsson Casino</a></li>
+                                <li><a href="#">Videoslots Casino</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Casino Winner</a></li>
+                                <li><a href="#">Cookie Casino</a></li>
+                                <li><a href="#">BitStarz Casino</a></li>
+                                <li><a href="#">One Casino</a></li>
+                                <li><a href="#">MBitcasino</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer_item">
+                            <div class="footer_logo">
+                                <a href="#"><img src="images/logo/footerlogo.png" class="" alt="not-found"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6">
+                        <div class="footer_item">
+                            <p>
+                                The independent reviewer and guide to online casinos, casino games and casino bonuses. Only for 18+.
+                            </p>
+                            <div class="footer_partner">
+                                <a href="#"><img src="images/logo/partner.gif" alt="not found"></a>
+                                <a href="#"><img src="images/logo/partner2.png" class="img-fluid" alt="not found"></a>
+                            </div>
+                            <div class="social_link pt-40">
+                                <p>Connect with us:</p>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom pb-20">
+            <div class="container-lg">
+                <div class="footer_menu pt-20">
+                    <ul>
+                        <li><a href="#">DISCLAIMER</a></li>
+                        <li><a href="#">PRIVACY</a></li>
+                        <li><a href="#">COOKIES</a></li>
+                        <li><a href="#">GAMBLING HELP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#"> ABOUT US</a></li>
+                    </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-10 text-center">
+                            <p>TheCasinoWizard.com is not part of or related to any commercial online casino. Gambling involves risk.
+                                By gambling online you run the risk that you may lose money or suffer psychological injuries. You gamble at your own risk.</p>
+                            <p>Copyright © 2021 TheCasinoWizard.com. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--------------------------Footer Section End------------------------------->
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/script.js"> </script>
+
+</body>
+
+</html>
